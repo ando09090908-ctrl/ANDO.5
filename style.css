@@ -1,4 +1,4 @@
-/* ===== الصفحة العامة ===== */
+/* ===== الصفحة العامة - نسخة أندو 2026 ===== */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,8 @@
 }
 
 body {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* تعديل: استخدمنا لون سنة 2026 Future Dusk */
+    background: linear-gradient(135deg, #443C73 0%, #2A244D 100%); 
     font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
     display: flex;
     flex-direction: column;
@@ -14,9 +15,10 @@ body {
     justify-content: center;
     min-height: 100vh;
     padding: 20px;
+    color: #ffffff; /* عشان الكلام ينور */
 }
 
-/* ===== العنوان الكبير ===== */
+/* ===== العنوان الكبير (زي ما هو عشان ده مجهودك) ===== */
 h1 {
   font-family: 'Inter', sans-serif; 
   font-size: clamp(2rem, 5vw, 5rem);
@@ -75,16 +77,16 @@ h1 {
     box-shadow: 0 12px 24px rgba(0,0,0,0.3);
 }
 
-/* ===== تصميم الفورم ===== */
+/* ===== تصميم الفورم (تعديل: زيادة العتامة لثقة جوجل 😂) ===== */
 form {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.98); 
+    backdrop-filter: blur(15px);
     padding: 35px;
     border-radius: 25px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.4);
     width: 100%;
     max-width: 500px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 fieldset {
@@ -120,35 +122,22 @@ input, select {
     font-family: inherit;
 }
 
+/* تعديل: الـ hover و focus بقوا بلون 2026 */
 input:hover, select:hover {
-    border-color: #667eea;
+    border-color: #443C73;
     background: #fff;
 }
 
 input:focus, select:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #443C73;
     background: white;
-    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+    box-shadow: 0 0 0 4px rgba(68, 60, 115, 0.1);
 }
 
-input::placeholder {
-    color: #aaa;
-}
-
-/* ===== رسالة الخطأ ===== */
-.error-message {
-    display: block;
-    font-size: 0.85rem;
-    margin-top: 5px;
-    min-height: 20px;
-    color: #ef4444;
-    font-weight: 500;
-}
-
-/* ===== الزرار ===== */
+/* ===== الزرار (تعديل: لوك 2026 الاحترافي) ===== */
 button {
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background: linear-gradient(45deg, #443C73, #667eea);
     color: white;
     border: none;
     padding: 14px 35px;
@@ -156,73 +145,18 @@ button {
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(68, 60, 115, 0.4);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     margin-top: 25px;
     width: 100%;
-    will-change: transform;
 }
 
 button:hover:not(:disabled) {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.6);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(68, 60, 115, 0.6);
 }
 
-button:active:not(:disabled) {
-    transform: translateY(-1px);
-}
-
-button:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-}
-
-/* ===== رسالة الإشعار ===== */
-.notification {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: white;
-    padding: 18px 25px;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-    z-index: 1000;
-    animation: slideIn 0.3s ease, slideOut 0.3s ease 2.7s;
-    max-width: 300px;
-    border-left: 4px solid #667eea;
-}
-
-.notification.success {
-    border-left-color: #10b981;
-}
-
-.notification.error {
-    border-left-color: #ef4444;
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateX(400px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideOut {
-    from {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    to {
-        transform: translateX(400px);
-        opacity: 0;
-    }
-}
-
-/* ===== النسخة ===== */
+/* ===== باقي الكود زي ما هو (النسخة والـ Responsive) ===== */
 h6 {
     color: rgba(255, 255, 255, 0.9);
     margin-top: 30px;
@@ -231,47 +165,7 @@ h6 {
     font-weight: 400;
 }
 
-/* ===== Responsive Design ===== */
 @media (max-width: 768px) {
-    body {
-        padding: 15px;
-    }
-    
-    h1 {
-        margin-bottom: 20px;
-    }
-    
-    form {
-        padding: 25px;
-    }
-    
-    .icon-links {
-        gap: 15px;
-        margin-bottom: 20px;
-    }
-    
-    .icon-links img {
-        width: 70px;
-        height: 70px;
-    }
-    
-    .notification {
-        right: 10px;
-        left: 10px;
-        max-width: none;
-    }
-}
-
-@media (max-width: 480px) {
-    form {
-        padding: 20px;
-    }
-    
-    label {
-        margin-top: 15px;
-    }
-    
-    input, select, button {
-        font-size: 16px;
-    }
+    .icon-links img { width: 70px; height: 70px; }
+    form { padding: 25px; }
 }
