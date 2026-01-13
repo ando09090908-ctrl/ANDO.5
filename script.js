@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // محاكاة إرسال البيانات
         setTimeout(() => {
-            showNotification(`تم الاتصال بسيرفرات جوجل.. أهلاً يا ${cleanedName}`, 'success');
+            showNotification(`تم تسجيل البيانات بنجاح(محاكاة) اهلا بك يا ${cleanedName}`, 'success');
             
             // تنظيف النموذج
             myForm.reset();
@@ -121,4 +121,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // حماية ضد CSRF: إضافة token (في تطبيق حقيقي)
     // يمكن إضافة CSRF token هنا قبل إرسال البيانات للخادم
+
 });
