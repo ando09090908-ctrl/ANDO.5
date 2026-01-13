@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' http://localhost:5000; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https:; font-src 'self'; connect-src 'self' http://localhost:5000">
+    <meta name="description" content="Learn about Google Workspace for free">
+    <meta name="copyright" content="ANDO.5">
+    <meta name="author" content="Mohamed Mostafa">
+    <meta name="version" content="beta">
+    <meta name="theme-color" content="#667eea">
+    <title>ANDO.5 - منصة التعلم</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="icon" type="image/png" href="Gemini_Generated_Image_rx1s8mrx1s8mrx1s.png">
+</head>
+<body>
+    <div class="neon-container">
+        <h1>ANDO.5</h1>
+    </div>
+
+    <div class="icon-links">
+        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube" loading="lazy">
+        </a>
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" aria-label="Google">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" loading="lazy">
+        </a>
+    </div>
+
+    <form id="myForm" novalidate>
+        <fieldset>
+            <legend>اشترك معنا</legend>
+
+            <label for="name">اسمك الكريم:</label>
+            <input type="text" id="name" name="name" placeholder="أدخل اسمك هنا" required minlength="2" maxlength="50" aria-required="true">
+            <span id="nameError" class="error-message"></span>
+
+            <label for="language">لغتك المفضلة:</label>
+            <select id="language" name="language" aria-label="اختر لغتك المفضلة">
+                <option value="">-- اختر --</option>
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="cpp">C++</option>
+            </select>
+
+            <button type="submit" id="submitBtn">إرسال</button>
+        </fieldset>
+    </form>
+    
+    <h6>الإصدار 1.2 (beta) + AI 🤖</h6>
+    
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
