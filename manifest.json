@@ -1,0 +1,21 @@
+{
+  "short_name": "ANDO.5", [cite: 2025-12-16]
+  "name": "ANDO.5 - منصة محمد مصطفى للتعلم", [cite: 2025-12-16]
+  "icons": [
+    {
+      "src": "Gemini_Generated_Image_rx1s8mrx1s8mrx1s.png", [cite: 2025-12-16]
+      "sizes": "192x192", [cite: 2025-12-16]
+      "type": "image/png" [cite: 2025-12-16]
+    },
+    {
+      "src": "Gemini_Generated_Image_rx1s8mrx1s8mrx1s.png", [cite: 2025-12-16]
+      "sizes": "512x512", [cite: 2025-12-16]
+      "type": "image/png" [cite: 2025-12-16]
+    }
+  ],
+  "start_url": "/index.html", [cite: 2025-12-16]
+  "background_color": "#ffffff", [cite: 2025-12-16]
+  "display": "standalone", [cite: 2025-12-16]
+  "theme_color": "#667eea", [cite: 2025-12-16]
+  "description": "منصة تعليمية مبتكرة لتعلم اللغات والبرمجة بأسلوب عصري" [cite: 2025-12-16]
+}
